@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <details>
+            <summary>
+                <img src="foto profile.jpeg" alt="Logo" id="logo">
+            </summary>
+            <img src="foto profile.jpeg" alt="Foto Profil" class="large-image">
+        </details>
+        <h1>Profil Mahasiswa</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('biodata')">Biodata</a></li>
+            <li><a href="#" onclick="showSection('pendidikan')">Pendidikan</a></li>
+            <li><a href="#" onclick="showSection('pengalaman')">Pengalaman</a></li>
+            <li><a href="#" onclick="showSection('keahlian')">Keahlian</a></li>
+            <li><a href="#" onclick="showSection('publikasi')">Publikasi</a></li>
+        </ul>
+        <video controls style="width: 100%; border-radius: 10px; margin-top: 15px;">
+            <source src="cu.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 5px; text-align: center; color: #555;">
+           Halo, selamat datang di website profile anezza.</p>
+    </nav>
+
+    <div class="main-content">
+        <section id="content">
+            <div id="biodata" class="section-content">
+                <h2>Biodata</h2>
+                <p>NIM  : 2023081064</p>
+                <p>Nama : Anezza Nuraina</p>
+                <p>Agama : Islam</p>
+                <p>Tempat Lahir : Jakarta</p>
+                <p>Tanggal Lahir : 31 Maret 2003</p>
+                <div class="image-container">
+                    <img src="biodata1.jpg" alt="Biodata 1" class="section-image">
+                    <img src="biodata2.jpg" alt="Biodata 2" class="section-image">
+                    <img src="biodata3.jpg" alt="Biodata 3" class="section-image">
+                </div>
+            </div>
+            
+            <div id="pendidikan" class="section-content" style="display:none;">
+                <h2>Pendidikan</h2>
+                <p>S1 Sistem Informasi - Universitas Pembangunan Jaya (2023 - Sekarang)</p>
+                <div class="image-container">
+                    <img src="pendidikan1.jpeg" alt="Biodata 1" class="section-image">
+                    <img src="pendidikan2.jpeg" alt="Biodata 2" class="section-image">
+                    <img src="pendidikan3.jpeg" alt="Biodata 3" class="section-image">
+                </div>
+            </div>
+            <div id="pengalaman" class="section-content" style="display:none;">
+                <h2>Pengalaman</h2>
+                <p>Magang TA Prodi Sitem Informasi (2023)</p>
+                <p>Support Staff Admisi (2024)</p>
+                <p>Anggota Kominfo UKM Dakauri (2023-2024)</p>
+                <p>Tim Desain Grafis Gidhub 2024 (2024)</p>
+                <p>Tim Desain UI/UX Nusa Quest Gamification (2024 - Sekarang)</p>
+                <p>Moderator Talk Show "Uniting New Minds Connected by Code (2024)</p>
+                <p>Tim Sponsor Proyek Siar Run (2024 - Sekarang)</p>
+                <p>Moderator Parents Gathering Universitas Pembangunan Jaya (2024)</p>
+                <div class="image-container">
+                    <img src="pengalaman1.jpeg" alt="Biodata 1" class="section-image">
+                    <img src="pengalaman2.jpg" alt="Biodata 2" class="section-image">
+                    <img src="pengalaman3.jpeg" alt="Biodata 3" class="section-image">
+                </div>
+            </div>
+            <div id="keahlian" class="section-content" style="display:none;">
+                <h2>Keahlian</h2>
+                <ul>
+                    <p>Pengembangan Aplikasi</p>
+                    <p>Desain Grafis</p>
+                    <p>Manajemen Proyek</p>
+                    <p>Kemampuan Komunikasi</p>
+                </ul>
+                <div class="image-container">
+                    <img src="keahlian1.png" alt="Biodata 1" class="section-image">
+                    <img src="keahlian3.jpg" alt="Biodata 2" class="section-image">
+                    <img src="keahlian2.png" alt="Biodata 3" class="section-image">
+                </div>
+            </div>
+            <div id="publikasi" class="section-content" style="display:none;">
+                <h2>Publikasi</h2>
+                <p>Penelitian tentang Teknologi Aplikasi Bank Sampah</p>
+                <p>Penelitian Nusa Quest Gamification Bersama UNIMAS</p>
+                <div class="image-container">
+                    <img src="publikasi1.jpeg" alt="Biodata 1" class="section-image">
+                    <img src="publikasi2.jpeg" alt="Biodata 2" class="section-image">
+                    <img src="publikasi3.jpeg" alt="Biodata 3" class="section-image">
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <ul>
+            <h3>Hobi</h3>
+                <li>Desain</li>
+                <li>Menulis Lagu</li>
+                <li>Berenang</li>
+                <li>Membaca</li>
+
+            <h3>Lagu Favorit</h3>
+                <li><a href="https://youtu.be/D-b5lGZtAyg?si=Vygz9snuz0FKGmjN" target="_blank">On An Evening In Roma - Dean Martin</a></li>
+                <li><a href="https://youtu.be/afjoqF3i3kU?si=AWAeC5aiGfcZFxPx" target="_blank">While You Were Sleeping - Laufey</a></li>
+                <li><a href="https://youtu.be/4-MLaxHqQj4?si=CaWPtw-u1_CkPvOu">Hi, Selamat Pagii - Sal Priadi</a></li>
+                <li><a href="https://youtu.be/-RqRdRoEzJo?si=7UX39eMc5_PblsBP">She - Jannabi</a></li>
+            </ul>
+
+ <!-- Kode Audio dan Tombol Play/Pause di sini -->
+ <div style="text-align: center; margin-top: 20px;">
+    <audio id="myAudio" loop>
+        <source src="dreamer.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button onclick="document.getElementById('myAudio').play()" 
+            style="padding: 10px 20px; border-radius: 50px; background-color: #a3917b; color: white; border: none; cursor: pointer;">
+        Play Music
+    </button>
+    <button onclick="document.getElementById('myAudio').pause()" 
+            style="padding: 10px 20px; border-radius: 50px; background-color: #a3917b; color: white; border: none; cursor: pointer;">
+        Pause Music
+    </button>
+</div>
+        </aside>
+
+    <footer>
+        <div class="footer-left">
+            <p>Behance : <a href="https://www.behance.net/anezzanuraina" target="_blank">anezzanuraina</a></p>
+            <p>Instagram : <a href="https://www.instagram.com/anezzaina" target="_blank">@anezzaina</a></p>
+            <p>Email : <a href="mailto:anezzanuraina@gmail.com">anezzanuraina@gmail.com</a></p>
+        </div>
+        <div class="footer-center">
+            <p>© 2024 Anezza Nuraina - All Rights Reserved</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>Profile Anezza</strong></p>
+            <p>We Learn To Keep Grow</p>
+        </div>
+    </footer>    
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section-content');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

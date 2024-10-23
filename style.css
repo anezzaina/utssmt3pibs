@@ -1,0 +1,278 @@
+body {
+    background: linear-gradient(to bottom right, #fff3e3, #e8f0f2); 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8e8e6c; 
+    margin-top: 3px;
+    margin-right: 8px;
+    margin-left: 8px;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start; /* Ubah menjadi flex-start untuk menjaga elemen di sebelah kiri */
+    align-items: center;
+    padding-left: 20px; /* Menambahkan padding kiri */
+    border-radius: 15px; /* Sudut melengkung pada header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+#logo {
+    width: 65px; /* Atur lebar sesuai kebutuhan */
+    height: 65px; /* Atur tinggi sesuai kebutuhan */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin-right: 15px;
+}
+
+.large-image {
+    width: 500px; /* Atur lebar sesuai kebutuhan */
+    height: 500px; /* Atur tinggi sesuai kebutuhan */
+    margin: 0 auto; /* Pusatkan gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+details {
+    cursor: pointer; /* Ganti cursor saat hover */
+}
+
+nav {
+    background-color: #c7cea4; /* Hijau pastel */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 30%;
+    margin-top: 7px;
+    margin-left: 8px;
+    border-radius: 15px; /* Sudut melengkung pada nav */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 25px 0;
+}
+
+nav ul li a {
+    color: #5b5b4e; /* Warna teks lebih gelap untuk kontras yang lebih baik */
+    text-decoration: none;
+    padding: 6px 30px;
+    border-radius: 50px;
+    background-color: #fff3e3; /* Putih lembut */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Tambahkan transisi untuk efek hover */
+}
+
+nav ul li a:hover {
+    background-color: #a3917b; /* Cokelat muda */
+    color: white; /* Teks putih saat hover */
+    transform: translateY(-2px); /* Efek naik sedikit saat hover */
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 120px); /* Menyesuaikan tinggi dengan footer */
+}
+
+section {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff; /* Putih */
+    height: 79%;
+    overflow-y: auto;
+    border-radius: 15px; /* Sudut melengkung pada section */
+    margin-right: 7px;
+    margin-top: 7px;
+    margin-left: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+aside {
+    padding: 20px;
+    flex: 1;
+    background-color: #c7cea4; /* Hijau pastel */
+    margin-top: 7px;
+    margin-right: 8px;
+    border-radius: 15px; /* Sudut melengkung pada aside */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+    max-height: 520px; /* Batasi tinggi maksimal */
+    overflow-y: auto; /* Jika konten lebih dari tinggi yang diberikan, tambahkan scrollbar */
+}
+
+.section-image {
+    max-width: 100%; /* Mengatur gambar agar responsif */
+    height: auto;
+    border-radius: 5px; /* Menambahkan sudut melengkung pada gambar */
+    margin: 10px 0; /* Menambahkan jarak atas dan bawah pada gambar */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    background-color: #8e8e6c;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Memisahkan bagian kiri, tengah, dan kanan */
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-left, .footer-center, .footer-right {
+    text-align: left;
+}
+
+.footer-left p, .footer-center p, .footer-right p {
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.footer-left a, .footer-center a, .footer-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-center a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-center {
+    text-align: center;
+    flex-grow: 1; /* Agar bagian tengah mengambil ruang di tengah */
+}
+
+.footer-right {
+    text-align: right;
+    margin-right: 35px; /* Menggeser sedikit ke kiri */
+}
+
+.footer-right p {
+    margin: 0;
+}
+
+/* Layout for Desktop */
+@media (min-width: 1025px) {
+    nav {
+        width: 25%;
+        float: left;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    aside {
+        width: 25%;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+}
+
+/* Layout for Tablet Landscape */
+@media (min-width: 768px) and (orientation: landscape) {
+    nav {
+        width: 25%;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    aside {
+        display: block; /* Menampilkan elemen aside */
+        padding: 20px;
+        background-color: #c7cea4; /* Hijau pastel */
+        overflow-y: auto; /* Agar bisa menggulir jika konten terlalu banyak */
+        height: auto; /* Tinggi otomatis sesuai konten */
+    }    
+
+    .main-content {
+        flex-direction: row;
+    }
+}
+
+/* Layout for Tablet Portrait */
+@media (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+    nav {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+/* Layout for Smartphone */
+@media (max-width: 599px) {
+    header {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    nav, section, aside {
+        width: 100%;
+        height: auto;
+    }
+
+    section, aside {
+        padding: 10px;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Memusatkan gambar secara horizontal */
+    margin: 20px 0; /* Memberikan jarak atas dan bawah */
+}
+
+.image-container img {
+    width: 200px; /* Lebar gambar */
+    height: 200px; /* Tinggi gambar, sama dengan lebar agar berbentuk persegi */
+    object-fit: cover; /* Menjaga gambar tetap memenuhi kotak tanpa distorsi */
+    margin: 0 7px; /* Memberikan jarak antara gambar */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk efek hover */
+    border-radius: 10px; /* Lebih melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Shadow yang lebih lembut */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Membesarkan sedikit saat di-hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Shadow saat hover */
+}
